@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-        <item android:title="One"
-              android:id="@+id/menu_novo" />
-        <item android:title="@string/btnVoltar"
-            android:id="@+id/menu_voltar" />
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/menu_novo"
+            android:icon="@mipmap/ic_instagram"
+            android:title="One"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/menu_voltar"
+            android:icon="@mipmap/ic_launcher"
+            android:title="@string/btnVoltar"
+            app:showAsAction="always" />
 </menu>
