@@ -70,7 +70,21 @@ public class MainActivity extends AppCompatActivity {
                 R.string.btnAbrirTela       //String para exibir na tela
 
                 );
+        menu.add(0,EXIT,0,"Sair");
 
         return super.onCreateOptionsMenu(menu);
+    }
+    
+     @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId() == ABRIR_TELA_DOIS){
+            Intent it = new Intent(MainActivity.this, //Onde estou - Quem executa a Intent
+                    TelaDoisActivity.class);          //Activity que será aberta
+            startActivity(it);
+        }else if(item.getItemId() == EXIT){
+            finish();
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
